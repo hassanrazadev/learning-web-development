@@ -1,0 +1,61 @@
+<!docktype html>
+<html>
+
+<head>
+	<title>CSS BASICS</title>
+	
+	<!-- Internal CSS -->
+	<style>
+		/* By Tagname */
+		div, p {
+			height: 100px;
+			background-color: #000;
+		}
+		
+		/* By Classname */
+		.yellow {
+			background-color: yellow;
+			height: 200px;
+		}
+		
+		/* By ID */
+		#red {
+			background-color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 
+		CSS Syntax 
+		selector {
+			property: value;
+		}
+	-->
+	
+	<!--
+		CSS Selector
+		1: By Tagname
+		2: By Classname
+		3: By ID
+		4: By Attribute
+	-->
+	
+	<!-- Inline CSS -->
+	<div style="height: 150px; background-color: green;"></div>
+	<br>
+	
+	<!-- Internal CSS -->	
+	<div></div>
+	<br>
+	<div class="yellow"></div>
+	<br>
+	<div id="red"></div>
+	<br>
+	<p class="yellow"></p>
+	<br>
+	<p></p>
+	
+</body>
+
+</html>
