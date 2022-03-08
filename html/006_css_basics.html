@@ -1,4 +1,4 @@
-<!docktype html>
+<!doctype html>
 <html>
 
 <head>
@@ -16,11 +16,45 @@
 		.yellow {
 			background-color: yellow;
 			height: 200px;
+			color: red;
+			border: 2px solid red;
 		}
 		
 		/* By ID */
 		#red {
 			background-color: red;
+			border-color: yellow;
+			border-width: 2px;
+			border-style: solid;
+		}
+		
+		input {
+			width: 200px;
+			height: 25px;
+			
+			margin-left: 15px;
+			margin-right: 10px;
+			margin-bottom: 5px;
+			margin-top: 2px;
+			
+			padding: 5px 10px 5px 10px; /* top right bottom left */
+		}
+		
+		/* By Attribute */
+		input[type="password"]{
+			border-color: red;
+		}
+		
+		input[type="email"]{
+			border-color: blue;
+		}
+		
+		input[type="phone"]{
+			border-color: black;
+		}
+		
+		input[type="text"]{
+			border-color: green;
 		}
 	</style>
 </head>
@@ -48,13 +82,20 @@
 	<!-- Internal CSS -->	
 	<div></div>
 	<br>
-	<div class="yellow"></div>
+	<div class="yellow circle start alpha"></div>
 	<br>
 	<div id="red"></div>
 	<br>
-	<p class="yellow"></p>
+	<p class="yellow">I'm red color</p>
 	<br>
-	<p></p>
+	
+	<form>
+		<input type="text" placeholder="Full Name" />
+		<input type="email" placeholder="Email Address" />
+		<input type="phone" placeholder="Phone Number" />
+		<input type="password" placeholder="Your Password" />
+	</form>
+	
 	
 </body>
 
